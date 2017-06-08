@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="info.androidhive.materialtabs.fragments.ThreeFragment">
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:id="@+id/button_wake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button_breakfast"
+        android:layout_alignBottom="@+id/button_breakfast"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="Wake Up" />
+
+    <Button
+        android:id="@+id/button_breakfast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timePicker"
+        android:layout_toEndOf="@+id/button_wake"
+        android:layout_toRightOf="@+id/button_wake"
+        android:text="Breakfast" />
+
+    <Button
+        android:id="@+id/button_lunch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timePicker"
+        android:layout_toEndOf="@+id/button_breakfast"
+        android:layout_toRightOf="@+id/button_breakfast"
+        android:text="Lunch" />
+
+    <Button
+        android:id="@+id/button_dinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button_lunch"
+        android:layout_toEndOf="@+id/button_lunch"
+        android:layout_toRightOf="@+id/button_lunch"
+        android:text="Dinner" />
+
+    <Button
+        android:id="@+id/button_sleep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_breakfast"
+        android:layout_centerHorizontal="true"
+        android:text="Bedtime" />
+
+</RelativeLayout>

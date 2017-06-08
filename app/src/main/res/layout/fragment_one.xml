@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="info.androidhive.materialtabs.fragments.OneFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/one"
+        android:textSize="40dp"
+        android:id="@+id/textView"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/progressBar"
+        android:layout_centerHorizontal="true" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="74dp"
+        android:maxWidth="20dp"
+        android:minHeight="74dp"
+        android:minWidth="10dp"
+        android:max="100"
+        android:progress="40"
+        android:background="@color/colorPrimary"
+        android:scrollbarSize="?attr/actionBarSize"
+        android:visibility="visible"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You have completed 40% of today's goal! Keep it up!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:id="@+id/textView_logwater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log water intake"
+        android:textSize="20dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView_write"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="I drank "
+        android:textSize="25dp"
+        android:layout_below="@+id/textView_logwater"
+        android:layout_alignRight="@+id/textView_writing"
+        android:layout_alignEnd="@+id/textView_writing" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="click here"
+        android:layout_marginRight="59dp"
+        android:layout_marginEnd="59dp"
+        android:layout_below="@+id/textView_write"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/textView_writing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ounces"
+        android:textSize="25dp"
+        android:layout_below="@+id/editText"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
+
+    <!--style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Horizontal"
+    '
+
+    android:progress="@android:integer/config_mediumAnimTime"-->
+
+</RelativeLayout>
